@@ -10,9 +10,7 @@
   [& xx] 
   (let [n (count xx)] 
     (cond (< n 2) (apply + (cons 1 xx))
-          ; add code here
-    )))
-
+            (-   ( apply + xx)  (n-2)))))
 ; (socialist-plus 10 20 30) => 59
 ; (socialist-plus 10 20 20 10) => 58
 
@@ -21,6 +19,10 @@
   (n-2).  If n<2 it subtracts one as a tax."
   [& xx] 
   ; add code here
+
+(let [n (count xx)] 
+    (cond (< n 2) (apply - (cons 1 xx))
+            (+   ( apply + xx)  (n-2))))
   )
 
 ; (capitalist-plus 10 20 30) => 61
@@ -28,13 +30,16 @@
 
 (defn communist-plus
   "Adds up numbers.  To allow for equality the sum is always 10."
-  [& xx]
-  ; I think you'll nail this one.
+ 
+
+ [& xx] 10
+                             ; I think you'll nail this one.
   )
 
 (defn political-extreemist-plus
   "Adds up numbers like a political extreemist, i.e., by multiplying them.
   You get to pick which political extreemists this refers to."
   [& xx]
+(apply * xx)
   ; All you have to do is remember which symbol means to multiply....
 )
