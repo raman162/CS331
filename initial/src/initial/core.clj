@@ -10,7 +10,7 @@
   [& xx] 
   (let [n (count xx)] 
     (cond (< n 2) (apply + (cons 1 xx))
-            (-   ( apply + xx)  (n-2)))))
+            (-   (apply + xx)  (n-2)))))
 ; (socialist-plus 10 20 30) => 59
 ; (socialist-plus 10 20 20 10) => 58
 
