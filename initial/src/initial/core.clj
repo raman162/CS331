@@ -9,8 +9,8 @@
   (n-2).  If n<2 it adds one as a subsidy."
   [& xx] 
   (let [n (count xx)] 
-    (cond (< n 2) (apply + (cons 1 xx))
-            (-   (apply + xx)  (n-2)))))
+    (if (< n 2) (apply + (cons 1 xx))
+            (-   (apply + xx)  (- n 2)))))
 ; (socialist-plus 10 20 30) => 59
 ; (socialist-plus 10 20 20 10) => 58
 
@@ -21,10 +21,9 @@
   ; add code here
 
 (let [n (count xx)] 
-    (cond (< n 2) (apply - (cons 1 xx))
-            (+   ( apply + xx)  (n-2))))
-  )
-
+    (if (< n 2) (apply + (cons -1 xx))
+            (+   ( apply + xx)  (- n 2))))
+  ) 
 ; (capitalist-plus 10 20 30) => 61
 ; (capitalist-plus 10 20 20 10) => 62
 
@@ -35,7 +34,6 @@
  [& xx] 10
                              ; I think you'll nail this one.
   )
-
 (defn political-extreemist-plus
   "Adds up numbers like a political extreemist, i.e., by multiplying them.
   You get to pick which political extreemists this refers to."

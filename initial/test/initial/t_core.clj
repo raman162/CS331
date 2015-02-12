@@ -11,7 +11,7 @@
 
 (facts "about socialist plus"
        (fact "it subsidized fewer than two elements" 
-        (socialist-plus 10 20)  => 31 )
+        (socialist-plus 10)  => 11 )
        (fact "it does nothing with two elements. Except add."
  (socialist-plus 10 20) => 30)
        (fact "it taxes the result if there are more than 2 elements."
