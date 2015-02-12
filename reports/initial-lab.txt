@@ -1,9 +1,9 @@
 Lab report for Initial Lab - rwalwynv
-Timestamp: 2015-02-09 23:12:34
+Timestamp: 2015-02-11 22:47:53
 
 |  :scenario |                                                 :title | :result | :score |
 |------------+--------------------------------------------------------+---------+--------|
-|    working |                  Test student code vs instructor tests |         |        |
+|    working |                  Test student code vs instructor tests |    Pass |     45 |
 | qualifying |                  Test student tests vs instructor code |         |        |
 |    broke-1 |                         Plus only takes two arguments. |         |        |
 |    broke-2 |                     Plus only looks at first argument. |         |        |
@@ -15,119 +15,18 @@ Timestamp: 2015-02-09 23:12:34
 |    broke-8 | Political extreemist plus adds instead of multiplying. |         |        |
 |    broke-9 |    Political extreemist plus only takes two arguments. |         |        |
 |   broke-10 | Political extreemist plus only returns first argument. |         |        |
-|      total |                                            Total Score |         |      0 |
+|      total |                                            Total Score |         |     45 |
 
 Details:
 
 
 ** Details for Test student code vs instructor tests
 
-Exception in thread "main" java.lang.IllegalArgumentException: cond requires an even number of forms, compiling:(initial/core.clj:12:5)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6567)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyze(Compiler.java:6322)
-	at clojure.lang.Compiler$IfExpr$Parser.parse(Compiler.java:2677)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6560)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6548)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyze(Compiler.java:6322)
-	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5708)
-	at clojure.lang.Compiler$LetExpr$Parser.parse(Compiler.java:6009)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6560)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6548)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyze(Compiler.java:6322)
-	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5708)
-	at clojure.lang.Compiler$FnMethod.parse(Compiler.java:5139)
-	at clojure.lang.Compiler$FnExpr.parse(Compiler.java:3751)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6558)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6548)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.access$100(Compiler.java:37)
-	at clojure.lang.Compiler$DefExpr$Parser.parse(Compiler.java:529)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6560)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyze(Compiler.java:6322)
-	at clojure.lang.Compiler.eval(Compiler.java:6623)
-	at clojure.lang.Compiler.load(Compiler.java:7064)
-	at clojure.lang.RT.loadResourceScript(RT.java:370)
-	at clojure.lang.RT.loadResourceScript(RT.java:361)
-	at clojure.lang.RT.load(RT.java:440)
-	at clojure.lang.RT.load(RT.java:411)
-	at clojure.core$load$fn__5018.invoke(core.clj:5530)
-	at clojure.core$load.doInvoke(core.clj:5529)
-	at clojure.lang.RestFn.invoke(RestFn.java:408)
-	at clojure.core$load_one.invoke(core.clj:5336)
-	at clojure.core$load_lib$fn__4967.invoke(core.clj:5375)
-	at clojure.core$load_lib.doInvoke(core.clj:5374)
-	at clojure.lang.RestFn.applyTo(RestFn.java:142)
-	at clojure.core$apply.invoke(core.clj:619)
-	at clojure.core$load_libs.doInvoke(core.clj:5413)
-	at clojure.lang.RestFn.applyTo(RestFn.java:137)
-	at clojure.core$apply.invoke(core.clj:621)
-	at clojure.core$use.doInvoke(core.clj:5507)
-	at clojure.lang.RestFn.invoke(RestFn.java:408)
-	at initial.t_core$eval8322$loading__4910__auto____8323.invoke(t_core.clj:1)
-	at initial.t_core$eval8322.invoke(t_core.clj:1)
-	at clojure.lang.Compiler.eval(Compiler.java:6619)
-	at clojure.lang.Compiler.eval(Compiler.java:6608)
-	at clojure.lang.Compiler.load(Compiler.java:7064)
-	at clojure.lang.RT.loadResourceScript(RT.java:370)
-	at clojure.lang.RT.loadResourceScript(RT.java:361)
-	at clojure.lang.RT.load(RT.java:440)
-	at clojure.lang.RT.load(RT.java:411)
-	at clojure.core$load$fn__5018.invoke(core.clj:5530)
-	at clojure.core$load.doInvoke(core.clj:5529)
-	at clojure.lang.RestFn.invoke(RestFn.java:408)
-	at clojure.core$load_one.invoke(core.clj:5336)
-	at clojure.core$load_lib$fn__4967.invoke(core.clj:5375)
-	at clojure.core$load_lib.doInvoke(core.clj:5374)
-	at clojure.lang.RestFn.applyTo(RestFn.java:142)
-	at clojure.core$apply.invoke(core.clj:619)
-	at clojure.core$load_libs.doInvoke(core.clj:5413)
-	at clojure.lang.RestFn.applyTo(RestFn.java:137)
-	at clojure.core$apply.invoke(core.clj:619)
-	at clojure.core$require.doInvoke(core.clj:5496)
-	at clojure.lang.RestFn.invoke(RestFn.java:421)
-	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
-	at midje.repl$load_facts.doInvoke(repl.clj:192)
-	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init7017337152787461533.clj:1)
-	at clojure.lang.Compiler.eval(Compiler.java:6619)
-	at clojure.lang.Compiler.eval(Compiler.java:6609)
-	at clojure.lang.Compiler.load(Compiler.java:7064)
-	at clojure.lang.Compiler.loadFile(Compiler.java:7020)
-	at clojure.main$load_script.invoke(main.clj:294)
-	at clojure.main$init_opt.invoke(main.clj:299)
-	at clojure.main$initialize.invoke(main.clj:327)
-	at clojure.main$null_opt.invoke(main.clj:362)
-	at clojure.main$main.doInvoke(main.clj:440)
-	at clojure.lang.RestFn.invoke(RestFn.java:421)
-	at clojure.lang.Var.invoke(Var.java:419)
-	at clojure.lang.AFn.applyToHelper(AFn.java:163)
-	at clojure.lang.Var.applyTo(Var.java:532)
-	at clojure.main.main(main.java:37)
-Caused by: java.lang.IllegalArgumentException: cond requires an even number of forms
-	at clojure.core$cond.doInvoke(core.clj:561)
-	at clojure.lang.RestFn.invoke(RestFn.java:442)
-	at clojure.lang.Var.invoke(Var.java:423)
-	at clojure.lang.AFn.applyToHelper(AFn.java:167)
-	at clojure.lang.Var.applyTo(Var.java:532)
-	at clojure.lang.Compiler.macroexpand1(Compiler.java:6468)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6546)
-	... 86 more
-Subprocess failed
+All checks (28) succeeded.
 
 
 ** Details for Test student tests vs instructor code
 
-
-FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
 Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: << in this context, compiling:(initial/t_core.clj:42:1)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
@@ -234,7 +133,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init2019743986684781338.clj:1)
+	at user$eval8318.invoke(form-init2315357030272859191.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -291,10 +190,6 @@ FAIL "about plus - it adds numbers." at (t_core.clj:10)
               initial.t_core$eval8345$fn__8346$fn__8347.invoke(t_core.clj:5)
               initial.t_core$eval8345$fn__8346.invoke(t_core.clj:5)
               initial.t_core$eval8345.invoke(t_core.clj:5)
-
-FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
 Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: << in this context, compiling:(initial/t_core.clj:42:1)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
@@ -401,7 +296,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init8903301464424887708.clj:1)
+	at user$eval8318.invoke(form-init6642489085053193249.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -440,10 +335,6 @@ FAIL "about plus - it adds numbers." at (t_core.clj:9)
 FAIL "about plus - it adds numbers." at (t_core.clj:10)
     Expected: 150
       Actual: 10
-
-FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
 Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: << in this context, compiling:(initial/t_core.clj:42:1)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
@@ -550,7 +441,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init1456772653585542234.clj:1)
+	at user$eval8318.invoke(form-init8576610549230786558.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -579,8 +470,8 @@ Subprocess failed
 
 
 FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
+    Expected: 11
+      Actual: 10
 
 FAIL "about socialist plus - it taxes the result if there are more than 2 elements." at (t_core.clj:18)
     Expected: 58
@@ -691,7 +582,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init7436083574234439993.clj:1)
+	at user$eval8318.invoke(form-init4890294161559617675.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -720,8 +611,8 @@ Subprocess failed
 
 
 FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
+    Expected: 11
+      Actual: 10
 Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: << in this context, compiling:(initial/t_core.clj:42:1)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
@@ -828,7 +719,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init3442834966051564479.clj:1)
+	at user$eval8318.invoke(form-init2500488054684363267.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -855,10 +746,6 @@ Subprocess failed
 
 ** Details for Capitalist plus doesn't tax.
 
-
-FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
 
 FAIL "about capitalist plus - it taxes fewer than two elements" at (t_core.clj:25)
     Expected: 9
@@ -969,7 +856,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init3505541488040155332.clj:1)
+	at user$eval8318.invoke(form-init2107130193598726904.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -996,10 +883,6 @@ Subprocess failed
 
 ** Details for Capitalist plus doesn't subsidize.
 
-
-FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
 
 FAIL "about capitalist plus - it subsidizes the result if there are more than 2 elements." at (t_core.clj:29)
     Expected: 61
@@ -1110,7 +993,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init4117305695235324426.clj:1)
+	at user$eval8318.invoke(form-init2645207413942025312.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -1137,10 +1020,6 @@ Subprocess failed
 
 ** Details for Communist plus returns something other than 10.
 
-
-FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
 
 FAIL "about communist plus - it only returns 10." at (t_core.clj:39)
     Expected: 10
@@ -1251,7 +1130,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init7406347353127670201.clj:1)
+	at user$eval8318.invoke(form-init3808781274061795372.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -1278,10 +1157,6 @@ Subprocess failed
 
 ** Details for Political extreemist plus adds instead of multiplying.
 
-
-FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
 Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: << in this context, compiling:(initial/t_core.clj:42:1)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
@@ -1388,7 +1263,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init5725764190346182316.clj:1)
+	at user$eval8318.invoke(form-init8566320367296235555.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -1415,10 +1290,6 @@ Subprocess failed
 
 ** Details for Political extreemist plus only takes two arguments.
 
-
-FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
 Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: << in this context, compiling:(initial/t_core.clj:42:1)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
@@ -1525,7 +1396,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init1191795609448423790.clj:1)
+	at user$eval8318.invoke(form-init3575360404086805013.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -1552,10 +1423,6 @@ Subprocess failed
 
 ** Details for Political extreemist plus only returns first argument.
 
-
-FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
-    Expected: 31
-      Actual: 30
 Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: << in this context, compiling:(initial/t_core.clj:42:1)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
@@ -1662,7 +1529,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init2950207289570357471.clj:1)
+	at user$eval8318.invoke(form-init3911543087644451124.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
