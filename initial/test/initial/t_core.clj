@@ -42,6 +42,6 @@
 (facts "about political extreemist plus"
   (fact "it multiplies instead of adds."
 (political-extreemist-plus 1 2 3) => 6
-<< (political-extreemist-plus 5 4) => 20))
+(political-extreemist-plus 5 4) => 20))
 
 
