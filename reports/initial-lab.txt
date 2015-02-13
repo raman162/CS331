@@ -1,0 +1,273 @@
+Lab report for Initial Lab - rwalwynv
+Timestamp: 2015-02-13 11:15:55
+
+|  :scenario |                                                 :title |                              :result | :score |
+|------------+--------------------------------------------------------+--------------------------------------+--------|
+|    working |                  Test student code vs instructor tests |                                      |        |
+| qualifying |                  Test student tests vs instructor code |                                 Pass |      5 |
+|    broke-1 |                         Plus only takes two arguments. | Pass: student tests detected errors. |      5 |
+|    broke-2 |                     Plus only looks at first argument. | Pass: student tests detected errors. |      5 |
+|    broke-3 |                            Socialist plus doesn't tax. | Pass: student tests detected errors. |      5 |
+|    broke-4 |                      Socialist plus doesn't subsidize. | Pass: student tests detected errors. |      5 |
+|    broke-5 |                           Capitalist plus doesn't tax. | Pass: student tests detected errors. |      5 |
+|    broke-6 |                     Capitalist plus doesn't subsidize. | Pass: student tests detected errors. |      5 |
+|    broke-7 |        Communist plus returns something other than 10. | Pass: student tests detected errors. |      5 |
+|    broke-8 | Political extreemist plus adds instead of multiplying. | Pass: student tests detected errors. |      5 |
+|    broke-9 |    Political extreemist plus only takes two arguments. | Pass: student tests detected errors. |      5 |
+|   broke-10 | Political extreemist plus only returns first argument. | Pass: student tests detected errors. |      5 |
+|      total |                                            Total Score |                                      |     55 |
+
+Details:
+
+
+** Details for Test student code vs instructor tests
+
+Exception in thread "main" java.lang.IllegalArgumentException: First argument to defn must be a symbol, compiling:(initial/core.clj:1:1)
+	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6567)
+	at clojure.lang.Compiler.analyze(Compiler.java:6361)
+	at clojure.lang.Compiler.analyze(Compiler.java:6322)
+	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5708)
+	at clojure.lang.Compiler$TryExpr$Parser.parse(Compiler.java:2156)
+	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6560)
+	at clojure.lang.Compiler.analyze(Compiler.java:6361)
+	at clojure.lang.Compiler.analyze(Compiler.java:6322)
+	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5708)
+	at clojure.lang.Compiler$FnMethod.parse(Compiler.java:5139)
+	at clojure.lang.Compiler$FnExpr.parse(Compiler.java:3751)
+	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6558)
+	at clojure.lang.Compiler.analyze(Compiler.java:6361)
+	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6548)
+	at clojure.lang.Compiler.analyze(Compiler.java:6361)
+	at clojure.lang.Compiler.analyze(Compiler.java:6322)
+	at clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3573)
+	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6562)
+	at clojure.lang.Compiler.analyze(Compiler.java:6361)
+	at clojure.lang.Compiler.analyze(Compiler.java:6322)
+	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5708)
+	at clojure.lang.Compiler$FnMethod.parse(Compiler.java:5139)
+	at clojure.lang.Compiler$FnExpr.parse(Compiler.java:3751)
+	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6558)
+	at clojure.lang.Compiler.analyze(Compiler.java:6361)
+	at clojure.lang.Compiler.eval(Compiler.java:6616)
+	at clojure.lang.Compiler.eval(Compiler.java:6608)
+	at clojure.lang.Compiler.load(Compiler.java:7064)
+	at clojure.lang.RT.loadResourceScript(RT.java:370)
+	at clojure.lang.RT.loadResourceScript(RT.java:361)
+	at clojure.lang.RT.load(RT.java:440)
+	at clojure.lang.RT.load(RT.java:411)
+	at clojure.core$load$fn__5018.invoke(core.clj:5530)
+	at clojure.core$load.doInvoke(core.clj:5529)
+	at clojure.lang.RestFn.invoke(RestFn.java:408)
+	at clojure.core$load_one.invoke(core.clj:5336)
+	at clojure.core$load_lib$fn__4967.invoke(core.clj:5375)
+	at clojure.core$load_lib.doInvoke(core.clj:5374)
+	at clojure.lang.RestFn.applyTo(RestFn.java:142)
+	at clojure.core$apply.invoke(core.clj:619)
+	at clojure.core$load_libs.doInvoke(core.clj:5413)
+	at clojure.lang.RestFn.applyTo(RestFn.java:137)
+	at clojure.core$apply.invoke(core.clj:621)
+	at clojure.core$use.doInvoke(core.clj:5507)
+	at clojure.lang.RestFn.invoke(RestFn.java:408)
+	at initial.t_core$eval8322$loading__4910__auto____8323.invoke(t_core.clj:1)
+	at initial.t_core$eval8322.invoke(t_core.clj:1)
+	at clojure.lang.Compiler.eval(Compiler.java:6619)
+	at clojure.lang.Compiler.eval(Compiler.java:6608)
+	at clojure.lang.Compiler.load(Compiler.java:7064)
+	at clojure.lang.RT.loadResourceScript(RT.java:370)
+	at clojure.lang.RT.loadResourceScript(RT.java:361)
+	at clojure.lang.RT.load(RT.java:440)
+	at clojure.lang.RT.load(RT.java:411)
+	at clojure.core$load$fn__5018.invoke(core.clj:5530)
+	at clojure.core$load.doInvoke(core.clj:5529)
+	at clojure.lang.RestFn.invoke(RestFn.java:408)
+	at clojure.core$load_one.invoke(core.clj:5336)
+	at clojure.core$load_lib$fn__4967.invoke(core.clj:5375)
+	at clojure.core$load_lib.doInvoke(core.clj:5374)
+	at clojure.lang.RestFn.applyTo(RestFn.java:142)
+	at clojure.core$apply.invoke(core.clj:619)
+	at clojure.core$load_libs.doInvoke(core.clj:5413)
+	at clojure.lang.RestFn.applyTo(RestFn.java:137)
+	at clojure.core$apply.invoke(core.clj:619)
+	at clojure.core$require.doInvoke(core.clj:5496)
+	at clojure.lang.RestFn.invoke(RestFn.java:421)
+	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
+	at midje.repl$load_facts.doInvoke(repl.clj:192)
+	at clojure.lang.RestFn.invoke(RestFn.java:397)
+	at user$eval8318.invoke(form-init8372787377934358704.clj:1)
+	at clojure.lang.Compiler.eval(Compiler.java:6619)
+	at clojure.lang.Compiler.eval(Compiler.java:6609)
+	at clojure.lang.Compiler.load(Compiler.java:7064)
+	at clojure.lang.Compiler.loadFile(Compiler.java:7020)
+	at clojure.main$load_script.invoke(main.clj:294)
+	at clojure.main$init_opt.invoke(main.clj:299)
+	at clojure.main$initialize.invoke(main.clj:327)
+	at clojure.main$null_opt.invoke(main.clj:362)
+	at clojure.main$main.doInvoke(main.clj:440)
+	at clojure.lang.RestFn.invoke(RestFn.java:421)
+	at clojure.lang.Var.invoke(Var.java:419)
+	at clojure.lang.AFn.applyToHelper(AFn.java:163)
+	at clojure.lang.Var.applyTo(Var.java:532)
+	at clojure.main.main(main.java:37)
+Caused by: java.lang.IllegalArgumentException: First argument to defn must be a symbol
+	at clojure.core$defn.doInvoke(core.clj:277)
+	at clojure.lang.RestFn.invoke(RestFn.java:494)
+	at clojure.lang.Var.invoke(Var.java:431)
+	at clojure.lang.AFn.applyToHelper(AFn.java:178)
+	at clojure.lang.Var.applyTo(Var.java:532)
+	at clojure.lang.Compiler.macroexpand1(Compiler.java:6468)
+	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6546)
+	... 84 more
+Subprocess failed
+
+
+** Details for Test student tests vs instructor code
+
+All checks (14) succeeded.
+
+
+** Details for Plus only takes two arguments.
+
+
+FAIL "about plus - it adds numbers." at (t_core.clj:7)
+    Expected: 0
+      Actual: clojure.lang.ArityException: Wrong number of args (0) passed to: core$plus
+              initial.t_core$eval8345$fn__8346$fn__8347$fn__8348$fn__8349$fn__8350.invoke(t_core.clj:7)
+              initial.t_core$eval8345$fn__8346$fn__8347$fn__8348$fn__8349.invoke(t_core.clj:5)
+              initial.t_core$eval8345$fn__8346$fn__8347$fn__8348.invoke(t_core.clj:5)
+              initial.t_core$eval8345$fn__8346$fn__8347.invoke(t_core.clj:5)
+              initial.t_core$eval8345$fn__8346.invoke(t_core.clj:5)
+              initial.t_core$eval8345.invoke(t_core.clj:5)
+
+FAIL "about plus - it adds numbers." at (t_core.clj:8)
+    Expected: 10
+      Actual: clojure.lang.ArityException: Wrong number of args (1) passed to: core$plus
+              initial.t_core$eval8345$fn__8346$fn__8347$fn__8348$fn__8349$fn__8352.invoke(t_core.clj:8)
+              initial.t_core$eval8345$fn__8346$fn__8347$fn__8348$fn__8349.invoke(t_core.clj:5)
+              initial.t_core$eval8345$fn__8346$fn__8347$fn__8348.invoke(t_core.clj:5)
+              initial.t_core$eval8345$fn__8346$fn__8347.invoke(t_core.clj:5)
+              initial.t_core$eval8345$fn__8346.invoke(t_core.clj:5)
+              initial.t_core$eval8345.invoke(t_core.clj:5)
+
+FAIL "about plus - it adds numbers." at (t_core.clj:10)
+    Expected: 150
+      Actual: clojure.lang.ArityException: Wrong number of args (5) passed to: core$plus
+              initial.t_core$eval8345$fn__8346$fn__8347$fn__8348$fn__8349$fn__8356.invoke(t_core.clj:10)
+              initial.t_core$eval8345$fn__8346$fn__8347$fn__8348$fn__8349.invoke(t_core.clj:5)
+              initial.t_core$eval8345$fn__8346$fn__8347$fn__8348.invoke(t_core.clj:5)
+              initial.t_core$eval8345$fn__8346$fn__8347.invoke(t_core.clj:5)
+              initial.t_core$eval8345$fn__8346.invoke(t_core.clj:5)
+              initial.t_core$eval8345.invoke(t_core.clj:5)
+FAILURE: 3 checks failed.  (But 11 succeeded.)
+Subprocess failed
+
+
+** Details for Plus only looks at first argument.
+
+
+FAIL "about plus - it adds numbers." at (t_core.clj:7)
+    Expected: 0
+      Actual: nil
+
+FAIL "about plus - it adds numbers." at (t_core.clj:9)
+    Expected: 30
+      Actual: 10
+
+FAIL "about plus - it adds numbers." at (t_core.clj:10)
+    Expected: 150
+      Actual: 10
+FAILURE: 3 checks failed.  (But 11 succeeded.)
+Subprocess failed
+
+
+** Details for Socialist plus doesn't tax.
+
+
+FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
+    Expected: 11
+      Actual: 10
+
+FAIL "about socialist plus - it taxes the result if there are more than 2 elements." at (t_core.clj:18)
+    Expected: 58
+      Actual: 60
+FAILURE: 2 checks failed.  (But 12 succeeded.)
+Subprocess failed
+
+
+** Details for Socialist plus doesn't subsidize.
+
+
+FAIL "about socialist plus - it subsidized fewer than two elements" at (t_core.clj:14)
+    Expected: 11
+      Actual: 10
+FAILURE: 1 check failed.  (But 13 succeeded.)
+Subprocess failed
+
+
+** Details for Capitalist plus doesn't tax.
+
+
+FAIL "about capitalist plus - it taxes fewer than two elements" at (t_core.clj:25)
+    Expected: 9
+      Actual: 10
+FAILURE: 1 check failed.  (But 13 succeeded.)
+Subprocess failed
+
+
+** Details for Capitalist plus doesn't subsidize.
+
+
+FAIL "about capitalist plus - it subsidizes the result if there are more than 2 elements." at (t_core.clj:29)
+    Expected: 61
+      Actual: 60
+FAILURE: 1 check failed.  (But 13 succeeded.)
+Subprocess failed
+
+
+** Details for Communist plus returns something other than 10.
+
+
+FAIL "about communist plus - it only returns 10." at (t_core.clj:39)
+    Expected: 10
+      Actual: 40
+FAILURE: 1 check failed.  (But 13 succeeded.)
+Subprocess failed
+
+
+** Details for Political extreemist plus adds instead of multiplying.
+
+
+FAIL "about political extreemist plus - it multiplies instead of adds." at (t_core.clj:45)
+    Expected: 20
+      Actual: 9
+FAILURE: 1 check failed.  (But 13 succeeded.)
+Subprocess failed
+
+
+** Details for Political extreemist plus only takes two arguments.
+
+
+FAIL "about political extreemist plus - it multiplies instead of adds." at (t_core.clj:44)
+    Expected: 6
+      Actual: clojure.lang.ArityException: Wrong number of args (3) passed to: core$political-extreemist-plus
+              initial.t_core$eval8425$fn__8426$fn__8427$fn__8428$fn__8429$fn__8430.invoke(t_core.clj:44)
+              initial.t_core$eval8425$fn__8426$fn__8427$fn__8428$fn__8429.invoke(t_core.clj:42)
+              initial.t_core$eval8425$fn__8426$fn__8427$fn__8428.invoke(t_core.clj:42)
+              initial.t_core$eval8425$fn__8426$fn__8427.invoke(t_core.clj:42)
+              initial.t_core$eval8425$fn__8426.invoke(t_core.clj:42)
+              initial.t_core$eval8425.invoke(t_core.clj:42)
+FAILURE: 1 check failed.  (But 13 succeeded.)
+Subprocess failed
+
+
+** Details for Political extreemist plus only returns first argument.
+
+
+FAIL "about political extreemist plus - it multiplies instead of adds." at (t_core.clj:44)
+    Expected: 6
+      Actual: 1
+
+FAIL "about political extreemist plus - it multiplies instead of adds." at (t_core.clj:45)
+    Expected: 20
+      Actual: 5
+FAILURE: 2 checks failed.  (But 12 succeeded.)
+Subprocess failed
