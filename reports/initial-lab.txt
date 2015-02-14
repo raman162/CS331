@@ -1,5 +1,5 @@
 Lab report for Initial Lab - rwalwynv
-Timestamp: 2015-02-13 11:15:55
+Timestamp: 2015-02-13 22:32:50
 
 |  :scenario |                                                 :title |                              :result | :score |
 |------------+--------------------------------------------------------+--------------------------------------+--------|
@@ -22,34 +22,10 @@ Details:
 
 ** Details for Test student code vs instructor tests
 
-Exception in thread "main" java.lang.IllegalArgumentException: First argument to defn must be a symbol, compiling:(initial/core.clj:1:1)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6567)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
+Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: o in this context, compiling:(initial/core.clj:1:1)
+	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
-	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5708)
-	at clojure.lang.Compiler$TryExpr$Parser.parse(Compiler.java:2156)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6560)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyze(Compiler.java:6322)
-	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5708)
-	at clojure.lang.Compiler$FnMethod.parse(Compiler.java:5139)
-	at clojure.lang.Compiler$FnExpr.parse(Compiler.java:3751)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6558)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6548)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyze(Compiler.java:6322)
-	at clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3573)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6562)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyze(Compiler.java:6322)
-	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5708)
-	at clojure.lang.Compiler$FnMethod.parse(Compiler.java:5139)
-	at clojure.lang.Compiler$FnExpr.parse(Compiler.java:3751)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6558)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.eval(Compiler.java:6616)
-	at clojure.lang.Compiler.eval(Compiler.java:6608)
+	at clojure.lang.Compiler.eval(Compiler.java:6623)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
 	at clojure.lang.RT.loadResourceScript(RT.java:370)
 	at clojure.lang.RT.loadResourceScript(RT.java:361)
@@ -93,7 +69,7 @@ Exception in thread "main" java.lang.IllegalArgumentException: First argument to
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8318.invoke(form-init8372787377934358704.clj:1)
+	at user$eval8318.invoke(form-init2966860939718401062.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -108,15 +84,13 @@ Exception in thread "main" java.lang.IllegalArgumentException: First argument to
 	at clojure.lang.AFn.applyToHelper(AFn.java:163)
 	at clojure.lang.Var.applyTo(Var.java:532)
 	at clojure.main.main(main.java:37)
-Caused by: java.lang.IllegalArgumentException: First argument to defn must be a symbol
-	at clojure.core$defn.doInvoke(core.clj:277)
-	at clojure.lang.RestFn.invoke(RestFn.java:494)
-	at clojure.lang.Var.invoke(Var.java:431)
-	at clojure.lang.AFn.applyToHelper(AFn.java:178)
-	at clojure.lang.Var.applyTo(Var.java:532)
-	at clojure.lang.Compiler.macroexpand1(Compiler.java:6468)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6546)
-	... 84 more
+Caused by: java.lang.RuntimeException: Unable to resolve symbol: o in this context
+	at clojure.lang.Util.runtimeException(Util.java:219)
+	at clojure.lang.Compiler.resolveIn(Compiler.java:6874)
+	at clojure.lang.Compiler.resolve(Compiler.java:6818)
+	at clojure.lang.Compiler.analyzeSymbol(Compiler.java:6779)
+	at clojure.lang.Compiler.analyze(Compiler.java:6343)
+	... 60 more
 Subprocess failed
 
 
