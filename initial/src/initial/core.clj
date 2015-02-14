@@ -1,4 +1,5 @@
-(ns initial.core
+o(ns initial.core)
+
 
 (defn plus
   [& xx]  (apply + xx))
@@ -40,4 +41,5 @@
   [& xx]
 (apply * xx)
   ; All you have to do is remember which symbol means to multiply....
-))
+)
+
