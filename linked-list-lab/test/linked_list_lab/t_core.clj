@@ -52,10 +52,21 @@
       (-> (insert-ordered nulist 9) :data) => (list-to-cons '(1 5 8 9))
       (-> (insert-ordered nulist 5) :data) => (list-to-cons '(1 5 5 8)))))
 
-(facts "about `delete`")
+(facts "about `delete`"
+  (let [nulist (List. (Cons. 10(Cons. 20(Cons. 30 nil))) 3)]
+    (fact "it decrements size"
+      (-> (delete 20 nulist) :size) => 2)
+    (fact "it does not truncate list past the deletion point"
+      (-> (delete 20 nulist) :data) => (list-to-cons '(10 30)))
+    (fact "does not decrement size if element not found"
+      (-> (delete 40 nulist) :size) => 3)))
+      
 
-(facts "about `delete-all`")
+(facts "about `delete-all`"
+  (let [nulist (List. (Cons. 10(Cons. 20(Cons. 30 (Cons. 10 nil)))) 4)]
+    (facts "it deletes multiple copies"
+      (-> (delete-all 10 nulist) :data) => (list-to-cons '(20 30)))
+    (facts "will return the correct size"
+      (-> (delete-all 10 nulist) :size) => 2)))
 
-(facts "about this lab"
-  (fact "the student never started.  Fix this `facts` from."
-    (+ 10 20) => 42))
+

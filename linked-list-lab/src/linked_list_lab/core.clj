@@ -81,14 +81,31 @@ This is used by `insert-ordered`."
 
 (defn delete
   "Delete `elt` from `xx`."
-  [elt xx])
-
+  [elt  {:keys [data size]}]
+  (if (= (exist elt data) 1) (List. (delete-help elt data) (- size 1)) (List. data size))) 
 ;; The `delete-all` function will delete all copies of elt from xx.
+ ;; Test broke-9 will delete only one copy.
+ ;; Test broke-10 will decrement the count instead of properly subtracting the
+ ;;      number of deletions.
 
-;; Test broke-9 will delete only one copy.
-;; Test broke-10 will decrement the count instead of properly subtracting the
-;;      number of deletions.
+ (defn delete-all
+   "Delete all occurrences of `elt` from `xx`."
+   [elt {:keys [data size]}]
+   (if (= (exist elt data) 1) (delete-all elt (List. (delete-help elt data) (- size 1))) (List. data size)))
+;Delete helper funciton
 
-(defn delete-all
-  "Delete all occurrences of `elt` from `xx`."
-  [elt xx])
+
+(defn delete-help [elt xx] 
+  (cond (nil? xx) nil
+        (= elt (:car xx)) (:cdr xx) 
+        :else (Cons. (:car xx) (delete-help elt (:cdr xx) ) )
+        ))
+
+(defn exist [elt xx]
+ 
+  (if (= elt (:car xx)) 1 (if (= nil (:cdr xx)) 0 (exist elt (:cdr xx))) ))
+
+
+
+
+
