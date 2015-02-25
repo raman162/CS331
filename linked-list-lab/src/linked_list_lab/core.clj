@@ -78,7 +78,8 @@ This is used by `insert-ordered`."
 ;; Test broke-6 will truncate the list past the deletion point.
 ;; Test broke-7 will forget to decrement the size.
 ;; Test broke-8 will always decrement the size, even if the element is not found.
-
+(declare exist)
+(declare delete-help)
 (defn delete
   "Delete `elt` from `xx`."
   [elt  {:keys [data size]}]
