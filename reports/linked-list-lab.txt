@@ -1,9 +1,9 @@
 Lab report for Linked List Lab - rwalwynv
-Timestamp: 2015-02-23 18:35:44
+Timestamp: 2015-02-25 16:48:32
 
 |  :scenario |                                    :title |                              :result | :score |
 |------------+-------------------------------------------+--------------------------------------+--------|
-|    working |     Test student code vs instructor tests |                                      |        |
+|    working |     Test student code vs instructor tests |                                 Pass |     45 |
 | qualifying |     Test student tests vs instructor code |                                 Pass |      5 |
 |    broke-1 |            Insert doesn't increment size. | Pass: student tests detected errors. |      5 |
 |    broke-2 |                    Insert doesn't insert. | Pass: student tests detected errors. |      5 |
@@ -15,7 +15,7 @@ Timestamp: 2015-02-23 18:35:44
 |    broke-8 |            Delete always decrements size. | Pass: student tests detected errors. |      5 |
 |    broke-9 |              Delete-all only deletes one. | Pass: student tests detected errors. |      5 |
 |   broke-10 | Delete all decrements count in all cases. | Pass: student tests detected errors. |      5 |
-|      total |                               Total Score |                                      |     55 |
+|      total |                               Total Score |                                      |    100 |
 
 Details:
 
@@ -62,110 +62,7 @@ WARNING: record? already refers to: #'clojure.core/record? in namespace: midje.d
 WARNING: record? already refers to: #'clojure.core/record? in namespace: midje.parsing.0-to-fact-form.formulas, being replaced by: #'midje.clojure.core/record?
 WARNING: record? already refers to: #'clojure.core/record? in namespace: midje.data.project-state, being replaced by: #'midje.clojure.core/record?
 WARNING: record? already refers to: #'clojure.core/record? in namespace: midje.parsing.other.arglists, being replaced by: #'midje.clojure.core/record?
-Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: exist in this context, compiling:(linked_list_lab/core.clj:85:10)
-	at clojure.lang.Compiler.analyze(Compiler.java:6464)
-	at clojure.lang.Compiler.analyze(Compiler.java:6406)
-	at clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3665)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6646)
-	at clojure.lang.Compiler.analyze(Compiler.java:6445)
-	at clojure.lang.Compiler.analyze(Compiler.java:6406)
-	at clojure.lang.Compiler$HostExpr$Parser.parse(Compiler.java:957)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6644)
-	at clojure.lang.Compiler.analyze(Compiler.java:6445)
-	at clojure.lang.Compiler.analyze(Compiler.java:6406)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6639)
-	at clojure.lang.Compiler.analyze(Compiler.java:6445)
-	at clojure.lang.Compiler.analyze(Compiler.java:6406)
-	at clojure.lang.Compiler$IfExpr$Parser.parse(Compiler.java:2703)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6644)
-	at clojure.lang.Compiler.analyze(Compiler.java:6445)
-	at clojure.lang.Compiler.analyze(Compiler.java:6406)
-	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5782)
-	at clojure.lang.Compiler$LetExpr$Parser.parse(Compiler.java:6100)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6644)
-	at clojure.lang.Compiler.analyze(Compiler.java:6445)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6632)
-	at clojure.lang.Compiler.analyze(Compiler.java:6445)
-	at clojure.lang.Compiler.analyze(Compiler.java:6406)
-	at clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5782)
-	at clojure.lang.Compiler$FnMethod.parse(Compiler.java:5217)
-	at clojure.lang.Compiler$FnExpr.parse(Compiler.java:3846)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6642)
-	at clojure.lang.Compiler.analyze(Compiler.java:6445)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6632)
-	at clojure.lang.Compiler.analyze(Compiler.java:6445)
-	at clojure.lang.Compiler.access$100(Compiler.java:38)
-	at clojure.lang.Compiler$DefExpr$Parser.parse(Compiler.java:538)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6644)
-	at clojure.lang.Compiler.analyze(Compiler.java:6445)
-	at clojure.lang.Compiler.analyze(Compiler.java:6406)
-	at clojure.lang.Compiler.eval(Compiler.java:6707)
-	at clojure.lang.Compiler.load(Compiler.java:7130)
-	at clojure.lang.RT.loadResourceScript(RT.java:370)
-	at clojure.lang.RT.loadResourceScript(RT.java:361)
-	at clojure.lang.RT.load(RT.java:440)
-	at clojure.lang.RT.load(RT.java:411)
-	at clojure.core$load$fn__5066.invoke(core.clj:5641)
-	at clojure.core$load.doInvoke(core.clj:5640)
-	at clojure.lang.RestFn.invoke(RestFn.java:408)
-	at clojure.core$load_one.invoke(core.clj:5446)
-	at clojure.core$load_lib$fn__5015.invoke(core.clj:5486)
-	at clojure.core$load_lib.doInvoke(core.clj:5485)
-	at clojure.lang.RestFn.applyTo(RestFn.java:142)
-	at clojure.core$apply.invoke(core.clj:626)
-	at clojure.core$load_libs.doInvoke(core.clj:5524)
-	at clojure.lang.RestFn.applyTo(RestFn.java:137)
-	at clojure.core$apply.invoke(core.clj:628)
-	at clojure.core$use.doInvoke(core.clj:5618)
-	at clojure.lang.RestFn.invoke(RestFn.java:408)
-	at linked_list_lab.t_core$eval7628$loading__4958__auto____7629.invoke(t_core.clj:1)
-	at linked_list_lab.t_core$eval7628.invoke(t_core.clj:1)
-	at clojure.lang.Compiler.eval(Compiler.java:6703)
-	at clojure.lang.Compiler.eval(Compiler.java:6692)
-	at clojure.lang.Compiler.load(Compiler.java:7130)
-	at clojure.lang.RT.loadResourceScript(RT.java:370)
-	at clojure.lang.RT.loadResourceScript(RT.java:361)
-	at clojure.lang.RT.load(RT.java:440)
-	at clojure.lang.RT.load(RT.java:411)
-	at clojure.core$load$fn__5066.invoke(core.clj:5641)
-	at clojure.core$load.doInvoke(core.clj:5640)
-	at clojure.lang.RestFn.invoke(RestFn.java:408)
-	at clojure.core$load_one.invoke(core.clj:5446)
-	at clojure.core$load_lib$fn__5015.invoke(core.clj:5486)
-	at clojure.core$load_lib.doInvoke(core.clj:5485)
-	at clojure.lang.RestFn.applyTo(RestFn.java:142)
-	at clojure.core$apply.invoke(core.clj:626)
-	at clojure.core$load_libs.doInvoke(core.clj:5524)
-	at clojure.lang.RestFn.applyTo(RestFn.java:137)
-	at clojure.core$apply.invoke(core.clj:626)
-	at clojure.core$require.doInvoke(core.clj:5607)
-	at clojure.lang.RestFn.invoke(RestFn.java:421)
-	at midje.repl$load_facts$fn__7561.invoke(repl.clj:206)
-	at midje.repl$load_facts.doInvoke(repl.clj:192)
-	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval7624.invoke(form-init6507635765402150680.clj:1)
-	at clojure.lang.Compiler.eval(Compiler.java:6703)
-	at clojure.lang.Compiler.eval(Compiler.java:6693)
-	at clojure.lang.Compiler.load(Compiler.java:7130)
-	at clojure.lang.Compiler.loadFile(Compiler.java:7086)
-	at clojure.main$load_script.invoke(main.clj:274)
-	at clojure.main$init_opt.invoke(main.clj:279)
-	at clojure.main$initialize.invoke(main.clj:307)
-	at clojure.main$null_opt.invoke(main.clj:342)
-	at clojure.main$main.doInvoke(main.clj:420)
-	at clojure.lang.RestFn.invoke(RestFn.java:421)
-	at clojure.lang.Var.invoke(Var.java:383)
-	at clojure.lang.AFn.applyToHelper(AFn.java:156)
-	at clojure.lang.Var.applyTo(Var.java:700)
-	at clojure.main.main(main.java:37)
-Caused by: java.lang.RuntimeException: Unable to resolve symbol: exist in this context
-	at clojure.lang.Util.runtimeException(Util.java:221)
-	at clojure.lang.Compiler.resolveIn(Compiler.java:6940)
-	at clojure.lang.Compiler.resolve(Compiler.java:6884)
-	at clojure.lang.Compiler.analyzeSymbol(Compiler.java:6845)
-	at clojure.lang.Compiler.analyze(Compiler.java:6427)
-	... 94 more
-Subprocess failed
+All checks (45) succeeded.
 
 
 ** Details for Test student tests vs instructor code
