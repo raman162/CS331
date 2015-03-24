@@ -21,7 +21,7 @@
     (Deque. (cons elt front) back (inc size))))
 
 (defn push-back
-  "Adds an element to the back fo the deque."
+  "Adds an element to the back of the deque."
   [dq elt]
   (let [{:keys [front back size]} dq]
     (Deque. front (cons elt back) (inc size))))
