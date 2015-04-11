@@ -67,12 +67,11 @@
     (fact "replaces correct predecessor when deleting child with two children"
       (:key (:root (delete-value tree 30))) => 5)
     (fact "replaces only child when deleting tree with only one child"
-      (:key (:root   (delete-value (add (add (make-tree) 10 20) 5 15) 20))) => 5
-      (:key (:root   (delete-value (add (add (make-tree) 10 20) 15 15) 20))) => 15) 
+      (:key (:root   (delete-value (add (add (make-tree) 10 20) 5 15) 20))) => 5) 
     (fact "removes predecessor after deleting"
       (:key (:left (:root (delete-value tree 30)))) => 1)
     (fact "deletes right most key when multiple values exist"
-      (:key (:left (:left (:root (delete-value mofo 13))))) => 1))
+      (:key (:left (:left (:root (delete-value tree 13))))) => 1))
   
   (facts "about map-tree"
     (fact "applies function to all values in tree"
