@@ -19,7 +19,7 @@
 
 ;; # Size
 ;;
-;; A warmup function.
+;; A super easy warmup function.
 
 (defn size "Return the size of the tree."
   [t]
