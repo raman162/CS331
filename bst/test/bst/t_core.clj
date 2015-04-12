@@ -6,7 +6,7 @@
 (facts "about this lab"
   
 
-  (facts "about make-tree"
+  (facts "about make - tree"
     (fact "makes an empty tree"
       (:root (make-tree)) => nil)
     (fact "size is zero"
