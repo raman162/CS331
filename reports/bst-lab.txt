@@ -1,5 +1,5 @@
 Lab report for BST Lab - rwalwynv
-Timestamp: 2015-04-12 18:14:12
+Timestamp: 2015-04-12 18:38:28
 
 |  :scenario |                                :title |                   :result | :score |
 |------------+---------------------------------------+---------------------------+--------|
@@ -40,16 +40,12 @@ Subprocess failed
 WARNING: find already refers to: #'clojure.core/find in namespace: bst.core, being replaced by: #'bst.core/find
 WARNING: find already refers to: #'clojure.core/find in namespace: bst.t-core, being replaced by: #'bst.core/find
 
-FAIL "about this lab - about make-node - right and left are nil when given key and value" at (t_core.clj:18)
-    Expected: true
-      Actual: nil
-
 FAIL "about this lab - about find-key - returns right most key when finding multiple" at (t_core.clj:47)
     Expected: 25
       Actual: 1
 
-FAIL "about this lab - about delete-value - deletes right most key when multiple values exist" at (t_core.clj:74)
+FAIL "about this lab - about delete-value - deletes right most key when multiple values exist" at (t_core.clj:73)
     Expected: 1
       Actual: nil
-FAILURE: 3 checks failed.  (But 24 succeeded.)
+FAILURE: 2 checks failed.  (But 24 succeeded.)
 Subprocess failed
