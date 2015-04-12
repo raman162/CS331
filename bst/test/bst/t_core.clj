@@ -15,7 +15,7 @@
 
   (facts "about make-node"
     ( fact "right and left are nil when given key and value"
-      (and (:right (make-node 10 20)) (:left (make-node 10 20))) => true))
+      (and (:right (make-node 10 20)) (:left (make-node 10 20))) => nil))
 
   (def tree (add (add (add (add (add (add (make-tree) 10 30) 20 40) 5 15) 30 60) 1 13) 25 13))
 
@@ -54,8 +54,7 @@
     (fact "replaces correct predecessor when deleting child with two children"
       (:key (:root (delete tree 10))) => 5)
     (fact "replaces only child when deleting tree with only one child"
-      (:key (:root   (delete (add (add (make-tree) 10 20) 5 15) 10))) => 5
-      (:key (:root   (delete (add (add (make-tree) 10 20) 15 15) 10))) => 15)
+      (:key (:root   (delete (add (add (make-tree) 10 20) 5 15) 10))) => 5)
     (fact "removes predecessor after deleting"
       (:key (:left (:root (delete tree 10)))) => 1))
 
