@@ -13,13 +13,17 @@
 
 (let [heap (add (add (add (add (add (make-heap 5) 4) 1) 2) 7) 3)]
 
+(facts "about make-heap"
+  (fact "the size is empty when creating new heap"
+    (:size (make-heap 10)) => 0)
+  (fact "the actual length vector size of the data is the size input from user"
+    (count (:data (make-heap 10))) => 10))
  
 (facts "about top"
   (fact "it returns nil when the heap has no elements"
     (top (make-heap 10)) => nil)
   (fact "it returns the top most element" 
-    (top heap) => 1)
-)
+    (top heap) => 1))
 
 
 (facts "about delete"
@@ -35,7 +39,7 @@
 
 (facts "about add"
 
-  (fact "doubles the heap if the heap is full"
+  (fact "increases size if heap is full"
     (:size (add heap 13)) => 6)
   (fact "larger element added doesn't move"
     (heap-get (add heap 13) 5) => 13)

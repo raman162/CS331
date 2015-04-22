@@ -103,7 +103,11 @@ If the heap has no elements, return `nil`."
                     :else (let [temp (heap-get heap loc)]
                             (percolate   (heap-set (heap-set heap loc (heap-get-left heap loc)) (heap-left loc) temp) (heap-left loc))))))
           :else (if (nil? (heap-get-right heap loc))
-                  heap
+                  (let [y (compare (heap-get heap loc) (heap-get-left heap loc))]
+              (cond (= y -1) heap
+                    (= y 0) heap
+                    :else (let [temp (heap-get heap loc)]
+                            (percolate   (heap-set (heap-set heap loc (heap-get-left heap loc)) (heap-left loc) temp) (heap-left loc)))))
                    (let [y (compare (heap-get heap loc) (heap-get-right heap loc))]
               (cond (= y -1) heap
                     (= y 0) heap
