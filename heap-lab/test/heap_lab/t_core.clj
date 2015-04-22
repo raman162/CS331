@@ -12,7 +12,6 @@
 
 
 (let [heap (add (add (add (add (add (make-heap 5) 4) 1) 2) 7) 3)]
-
 (facts "about make-heap"
   (fact "the size is empty when creating new heap"
     (:size (make-heap 10)) => 0)
