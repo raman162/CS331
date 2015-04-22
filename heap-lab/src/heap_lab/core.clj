@@ -79,11 +79,11 @@ this is part of the implementation, not for public consumption."
   "Return the top element of a heap.
 If the heap has no elements, return `nil`."
   [heap]
-  (heap-get heap 0)
+(if (= (:size heap) 0) nil (heap-get heap 0))  
   )
 
 (defn percolate [heap loc]
- (if (< (dec (count (:data heap))) (or (heap-left loc) (heap-right loc))) heap  
+ (if (<= (dec (count (:data heap))) (or (heap-left loc) (heap-right loc))) heap  
 
  (let [x (compare (heap-get-left heap loc) (heap-get-right heap loc))]
     (cond (= x -1) 
