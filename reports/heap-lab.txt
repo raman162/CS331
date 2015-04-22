@@ -1,52 +1,18 @@
 Lab report for Heap Lab - rwalwynv
-Timestamp: 2015-04-22 02:05:53
+Timestamp: 2015-04-22 10:49:23
 
 |  :scenario |                                :title |                   :result | :score |
 |------------+---------------------------------------+---------------------------+--------|
-|    working | Test student code vs instructor tests |                      Fail |     40 |
+|    working | Test student code vs instructor tests |                      Fail |     43 |
 | qualifying | Test student tests vs instructor code |                      Fail |      4 |
 | qualifying |           Qualifying Scenarios Failed | No further scenarios run. |      0 |
-|      total |                           Total Score |                           |     44 |
+|      total |                           Total Score |                           |     47 |
 
 Details:
 
 
 ** Details for Test student code vs instructor tests
 
-
-FAIL "about top - it returns nil if there isn't one." at (t_core.clj:71)
-    Expected: nil
-      Actual: 2
-
-FAIL "about delete - It deletes one element okay." at (t_core.clj:77)
-Actual result did not agree with the checking function.
-        Actual result: java.lang.Exception: Get called with 2 but last vector slot is 1
-              heap_lab.core$heap_get.invoke(core.clj:29)
-              heap_lab.core$heap_get_right.invoke(core.clj:61)
-              heap_lab.core$percolate.invoke(core.clj:88)
-              heap_lab.core$delete.invoke(core.clj:134)
-              heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8221$fn__8222$fn__8223.invoke(t_core.clj:77)
-              heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8221$fn__8222.invoke(t_core.clj:73)
-              heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8221.invoke(t_core.clj:73)
-              heap_lab.t_core$eval8212$fn__8213$fn__8214.invoke(t_core.clj:73)
-              heap_lab.t_core$eval8212$fn__8213.invoke(t_core.clj:73)
-              heap_lab.t_core$eval8212.invoke(t_core.clj:73)
-    Checking function: (heap-equal (Heap. 0 [nil nil]))
-
-FAIL "about delete - It deletes from two element heaps okay." at (t_core.clj:80)
-Actual result did not agree with the checking function.
-        Actual result: java.lang.Exception: Get called with 2 but last vector slot is 1
-              heap_lab.core$heap_get.invoke(core.clj:29)
-              heap_lab.core$heap_get_right.invoke(core.clj:61)
-              heap_lab.core$percolate.invoke(core.clj:88)
-              heap_lab.core$delete.invoke(core.clj:134)
-              heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8227$fn__8228$fn__8229.invoke(t_core.clj:80)
-              heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8227$fn__8228.invoke(t_core.clj:73)
-              heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8227.invoke(t_core.clj:73)
-              heap_lab.t_core$eval8212$fn__8213$fn__8214.invoke(t_core.clj:73)
-              heap_lab.t_core$eval8212$fn__8213.invoke(t_core.clj:73)
-              heap_lab.t_core$eval8212.invoke(t_core.clj:73)
-    Checking function: (heap-equal (Heap. 1 [10 nil]))
 
 FAIL "about delete - Deletes from three element heaps work." at (t_core.clj:85)
 Actual result did not agree with the checking function.
@@ -57,7 +23,7 @@ FAIL "about delete - Deletes from larger heaps work." at (t_core.clj:89)
 Actual result did not agree with the checking function.
         Actual result: {:data [2 4 12 6 8 10 nil], :size 6}::heap_lab.core.Heap
     Checking function: (heap-equal (Heap. 6 [2 4 10 6 8 12 nil]))
-FAILURE: 5 checks failed.  (But 43 succeeded.)
+FAILURE: 2 checks failed.  (But 46 succeeded.)
 Subprocess failed
 
 
