@@ -36,7 +36,7 @@
 (facts "about add"
 
   (fact "doubles the heap if the heap is full"
-    (:size (add heap 13)) => 10)
+    (:size (add heap 13)) => 6)
   (fact "larger element added doesn't move"
     (heap-get (add heap 13) 5) => 13)
   (fact "smallest element goes to the top"

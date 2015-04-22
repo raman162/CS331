@@ -15,7 +15,7 @@
   "Creates an empty heap.  Specify the size for the data vector.
 The vector will be populated with `nil`."
   [size]
-  (Heap. size (apply vector (repeat size nil))))
+  (Heap. 0 (apply vector (repeat size nil))))
 
 ;; To access the elements of the heap, we will use these functions
 ;; `get`, `left`, `right`, and `parent`.
@@ -83,7 +83,7 @@ If the heap has no elements, return `nil`."
   )
 
 (defn percolate [heap loc]
- (if (< (dec (:size heap)) (or (heap-left loc) (heap-right loc))) heap  
+ (if (< (dec (count (:data heap))) (or (heap-left loc) (heap-right loc))) heap  
 
  (let [x (compare (heap-get-left heap loc) (heap-get-right heap loc))]
     (cond (= x -1) 
@@ -111,8 +111,7 @@ If the heap has no elements, return `nil`."
                             (percolate   (heap-set (heap-set heap loc (heap-get-right heap loc)) (heap-right loc) temp) (heap-right loc))))))))))
 
 (defn heap-full [heap]
-  (if (nil? (heap-get heap (dec (:size heap)))) false true))
-
+  (if (nil? (peek (:data heap))) false true))
 
 
 (defn heap-last [heap loc]
@@ -132,7 +131,7 @@ Returns the new heap."
   (if (nil? (heap-get heap 0)) 
     heap
     (let [last (dec (heap-last-elt heap 0))]
-      (percolate (heap-set (heap-set heap 0 (heap-get heap last)) last nil) 0))))
+      (Heap. (dec (:size heap)) (:data (percolate (heap-set (heap-set heap 0 (heap-get heap last)) last nil) 0)) ) )))
 
 
 
@@ -152,7 +151,6 @@ Returns the new heap."
   "Adds a new element to the heap
 If the data vector is too small, we resize it."
   [heap data]
-  (if (heap-full heap) (add (heap-double heap nil 0) data)
-      (add-helper (heap-set heap (heap-last heap 0) data) (heap-last heap 0)))
-  )
+  (if (heap-full heap) (add (Heap. (:size heap) (:data (heap-double heap nil 0)))   data)
+      (Heap. (inc (:size heap)) (:data (add-helper (heap-set heap (heap-last heap 0) data) (heap-last heap 0))))))
 
