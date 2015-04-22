@@ -1,12 +1,12 @@
 Lab report for Heap Lab - rwalwynv
-Timestamp: 2015-04-18 23:19:38
+Timestamp: 2015-04-22 02:05:53
 
 |  :scenario |                                :title |                   :result | :score |
 |------------+---------------------------------------+---------------------------+--------|
-|    working | Test student code vs instructor tests |                      Fail |     20 |
+|    working | Test student code vs instructor tests |                      Fail |     40 |
 | qualifying | Test student tests vs instructor code |                      Fail |      4 |
 | qualifying |           Qualifying Scenarios Failed | No further scenarios run. |      0 |
-|      total |                           Total Score |                           |     24 |
+|      total |                           Total Score |                           |     44 |
 
 Details:
 
@@ -14,73 +14,23 @@ Details:
 ** Details for Test student code vs instructor tests
 
 
-FAIL "about add - it adds elements in the correct places." at (t_core.clj:22)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 nil nil nil nil], :size 5}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 1 [2 nil]))
-
-FAIL "about add - it adds elements in the correct places." at (t_core.clj:23)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 4 nil nil nil], :size 5}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 2 [2 4 nil]))
-
-FAIL "about add - it adds elements in the correct places." at (t_core.clj:24)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 4 6 nil nil], :size 5}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 3 [2 4 6 nil]))
-
-FAIL "about add - it adds elements in the correct places." at (t_core.clj:25)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 4 6 8 nil], :size 5}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 4 [2 4 6 8 nil]))
-
-FAIL "about add - it adds elements in the correct places." at (t_core.clj:27)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 4 6 8 10 12 nil nil nil nil], :size 10}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 6 [2 4 6 8 10 12]))
-
-FAIL "about add - it adds elements in the correct places." at (t_core.clj:28)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 4 6 8 10 12 14 nil nil nil], :size 10}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 7 [2 4 6 8 10 12 14]))
-
-FAIL "about add - it reorders elements as needed." at (t_core.clj:48)
-Actual result did not agree with the checking function.
-        Actual result: {:data [14 nil nil nil nil], :size 5}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 1 [14 nil]))
-
-FAIL "about add - it reorders elements as needed." at (t_core.clj:49)
-Actual result did not agree with the checking function.
-        Actual result: {:data [12 14 nil nil nil], :size 5}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 2 [12 14 nil]))
-
-FAIL "about add - it reorders elements as needed." at (t_core.clj:50)
-Actual result did not agree with the checking function.
-        Actual result: {:data [8 14 12 nil nil], :size 5}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 3 [8 14 12 nil]))
-
-FAIL "about add - it reorders elements as needed." at (t_core.clj:51)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 8 12 14 nil], :size 5}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 4 [2 8 12 14 nil]))
-
-FAIL "about add - it reorders elements as needed." at (t_core.clj:53)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 4 8 14 8 12 nil nil nil nil], :size 10}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 6 [2 4 8 14 8 12 nil]))
-
-FAIL "about add - it reorders elements as needed." at (t_core.clj:54)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 4 6 14 8 12 8 nil nil nil], :size 10}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 7 [2 4 6 14 8 12 8 nil]))
-
 FAIL "about top - it returns nil if there isn't one." at (t_core.clj:71)
     Expected: nil
       Actual: 2
 
 FAIL "about delete - It deletes one element okay." at (t_core.clj:77)
 Actual result did not agree with the checking function.
-        Actual result: {:data [nil nil], :size 1}::heap_lab.core.Heap
+        Actual result: java.lang.Exception: Get called with 2 but last vector slot is 1
+              heap_lab.core$heap_get.invoke(core.clj:29)
+              heap_lab.core$heap_get_right.invoke(core.clj:61)
+              heap_lab.core$percolate.invoke(core.clj:88)
+              heap_lab.core$delete.invoke(core.clj:134)
+              heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8221$fn__8222$fn__8223.invoke(t_core.clj:77)
+              heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8221$fn__8222.invoke(t_core.clj:73)
+              heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8221.invoke(t_core.clj:73)
+              heap_lab.t_core$eval8212$fn__8213$fn__8214.invoke(t_core.clj:73)
+              heap_lab.t_core$eval8212$fn__8213.invoke(t_core.clj:73)
+              heap_lab.t_core$eval8212.invoke(t_core.clj:73)
     Checking function: (heap-equal (Heap. 0 [nil nil]))
 
 FAIL "about delete - It deletes from two element heaps okay." at (t_core.clj:80)
@@ -89,7 +39,7 @@ Actual result did not agree with the checking function.
               heap_lab.core$heap_get.invoke(core.clj:29)
               heap_lab.core$heap_get_right.invoke(core.clj:61)
               heap_lab.core$percolate.invoke(core.clj:88)
-              heap_lab.core$delete.invoke(core.clj:135)
+              heap_lab.core$delete.invoke(core.clj:134)
               heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8227$fn__8228$fn__8229.invoke(t_core.clj:80)
               heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8227$fn__8228.invoke(t_core.clj:73)
               heap_lab.t_core$eval8212$fn__8213$fn__8214$fn__8227.invoke(t_core.clj:73)
@@ -98,61 +48,16 @@ Actual result did not agree with the checking function.
               heap_lab.t_core$eval8212.invoke(t_core.clj:73)
     Checking function: (heap-equal (Heap. 1 [10 nil]))
 
-FAIL "about delete - It deletes from two element heaps okay." at (t_core.clj:81)
-Actual result did not agree with the checking function.
-        Actual result: {:data [10 nil nil], :size 2}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 1 [10 nil nil]))
-
-FAIL "about delete - Deletes from three element heaps work." at (t_core.clj:84)
-Actual result did not agree with the checking function.
-        Actual result: {:data [5 10 nil], :size 3}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 2 [5 10]))
-
 FAIL "about delete - Deletes from three element heaps work." at (t_core.clj:85)
 Actual result did not agree with the checking function.
-        Actual result: {:data [10 5 nil], :size 3}::heap_lab.core.Heap
+        Actual result: {:data [10 5 nil], :size 2}::heap_lab.core.Heap
     Checking function: (heap-equal (Heap. 2 [5 10]))
-
-FAIL "about delete - Deletes from larger heaps work." at (t_core.clj:88)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 6 4 12 8 10 nil], :size 7}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 6 [2 6 4 12 8 10 nil]))
 
 FAIL "about delete - Deletes from larger heaps work." at (t_core.clj:89)
 Actual result did not agree with the checking function.
-        Actual result: {:data [2 4 12 6 8 10 nil], :size 7}::heap_lab.core.Heap
+        Actual result: {:data [2 4 12 6 8 10 nil], :size 6}::heap_lab.core.Heap
     Checking function: (heap-equal (Heap. 6 [2 4 10 6 8 12 nil]))
-
-FAIL "about delete - Deletes from larger heaps work." at (t_core.clj:90)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 5 4 6 8 10 nil], :size 7}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 6 [2 5 4 6 8 10 nil]))
-
-FAIL "about delete - Deletes from larger heaps work." at (t_core.clj:91)
-Actual result did not agree with the checking function.
-        Actual result: {:data [2 4 5 6 8 10 nil], :size 7}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 6 [2 4 5 6 8 10 nil]))
-
-FAIL "about delete - Deletes from larger heaps work." at (t_core.clj:93)
-Actual result did not agree with the checking function.
-        Actual result: {:data [4 6 10 12 8 nil nil], :size 6}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 5 [4 6 10 12 8 nil nil]))
-
-FAIL "about delete - Deletes from larger heaps work." at (t_core.clj:94)
-Actual result did not agree with the checking function.
-        Actual result: {:data [4 6 10 12 8 nil nil], :size 6}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 5 [4 6 10 12 8 nil nil]))
-
-FAIL "about delete - Deletes from larger heaps work." at (t_core.clj:95)
-Actual result did not agree with the checking function.
-        Actual result: {:data [4 5 10 6 8 nil nil], :size 6}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 5 [4 5 10 6 8 nil nil]))
-
-FAIL "about delete - Deletes from larger heaps work." at (t_core.clj:96)
-Actual result did not agree with the checking function.
-        Actual result: {:data [4 6 5 10 8 nil nil], :size 6}::heap_lab.core.Heap
-    Checking function: (heap-equal (Heap. 5 [4 6 5 10 8 nil nil]))
-FAILURE: 26 checks failed.  (But 22 succeeded.)
+FAILURE: 5 checks failed.  (But 43 succeeded.)
 Subprocess failed
 
 
@@ -162,9 +67,5 @@ Subprocess failed
 FAIL "about delete - does not duplicate the last element" at (t_core.clj:32)
     Expected: nil
       Actual: 4
-
-FAIL "about add - doubles the heap if the heap is full" at (t_core.clj:39)
-    Expected: 10
-      Actual: 6
-FAILURE: 2 checks failed.  (But 9 succeeded.)
+FAILURE: 1 check failed.  (But 10 succeeded.)
 Subprocess failed
