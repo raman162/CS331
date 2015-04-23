@@ -1,72 +1,25 @@
 Lab report for Heap Lab - rwalwynv
-Timestamp: 2015-04-23 07:52:10
+Timestamp: 2015-04-23 08:07:57
 
 |  :scenario |                                :title |                   :result | :score |
 |------------+---------------------------------------+---------------------------+--------|
-|    working | Test student code vs instructor tests |                           |        |
+|    working | Test student code vs instructor tests |                      Pass |     45 |
 | qualifying | Test student tests vs instructor code |                      Fail |      4 |
 | qualifying |           Qualifying Scenarios Failed | No further scenarios run. |      0 |
-|      total |                           Total Score |                           |      4 |
+|      total |                           Total Score |                           |     49 |
 
 Details:
 
 
 ** Details for Test student code vs instructor tests
 
-Exception in thread "main" java.lang.IllegalStateException: heap-equal already refers to: #'heap-lab.core/heap-equal in namespace: heap-lab.t-core, compiling:(heap_lab/t_core.clj:6:1)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6567)
-	at clojure.lang.Compiler.analyze(Compiler.java:6361)
-	at clojure.lang.Compiler.analyze(Compiler.java:6322)
-	at clojure.lang.Compiler.eval(Compiler.java:6623)
-	at clojure.lang.Compiler.load(Compiler.java:7064)
-	at clojure.lang.RT.loadResourceScript(RT.java:370)
-	at clojure.lang.RT.loadResourceScript(RT.java:361)
-	at clojure.lang.RT.load(RT.java:440)
-	at clojure.lang.RT.load(RT.java:411)
-	at clojure.core$load$fn__5018.invoke(core.clj:5530)
-	at clojure.core$load.doInvoke(core.clj:5529)
-	at clojure.lang.RestFn.invoke(RestFn.java:408)
-	at clojure.core$load_one.invoke(core.clj:5336)
-	at clojure.core$load_lib$fn__4967.invoke(core.clj:5375)
-	at clojure.core$load_lib.doInvoke(core.clj:5374)
-	at clojure.lang.RestFn.applyTo(RestFn.java:142)
-	at clojure.core$apply.invoke(core.clj:619)
-	at clojure.core$load_libs.doInvoke(core.clj:5413)
-	at clojure.lang.RestFn.applyTo(RestFn.java:137)
-	at clojure.core$apply.invoke(core.clj:619)
-	at clojure.core$require.doInvoke(core.clj:5496)
-	at clojure.lang.RestFn.invoke(RestFn.java:421)
-	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
-	at midje.repl$load_facts.doInvoke(repl.clj:192)
-	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init1617137503391769623.clj:1)
-	at clojure.lang.Compiler.eval(Compiler.java:6619)
-	at clojure.lang.Compiler.eval(Compiler.java:6609)
-	at clojure.lang.Compiler.load(Compiler.java:7064)
-	at clojure.lang.Compiler.loadFile(Compiler.java:7020)
-	at clojure.main$load_script.invoke(main.clj:294)
-	at clojure.main$init_opt.invoke(main.clj:299)
-	at clojure.main$initialize.invoke(main.clj:327)
-	at clojure.main$null_opt.invoke(main.clj:362)
-	at clojure.main$main.doInvoke(main.clj:440)
-	at clojure.lang.RestFn.invoke(RestFn.java:421)
-	at clojure.lang.Var.invoke(Var.java:419)
-	at clojure.lang.AFn.applyToHelper(AFn.java:163)
-	at clojure.lang.Var.applyTo(Var.java:532)
-	at clojure.main.main(main.java:37)
-Caused by: java.lang.IllegalStateException: heap-equal already refers to: #'heap-lab.core/heap-equal in namespace: heap-lab.t-core
-	at clojure.lang.Namespace.warnOrFailOnReplace(Namespace.java:88)
-	at clojure.lang.Namespace.intern(Namespace.java:72)
-	at clojure.lang.Compiler$DefExpr$Parser.parse(Compiler.java:489)
-	at clojure.lang.Compiler.analyzeSeq(Compiler.java:6560)
-	... 39 more
-Subprocess failed
+All checks (48) succeeded.
 
 
 ** Details for Test student tests vs instructor code
 
 
-FAIL "about delete - does not duplicate the last element" at (t_core.clj:53)
+FAIL "about delete - does not duplicate the last element" at (t_core.clj:52)
     Expected: nil
       Actual: 4
 FAILURE: 1 check failed.  (But 40 succeeded.)
