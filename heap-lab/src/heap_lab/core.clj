@@ -144,7 +144,6 @@ Returns the new heap."
     (let [doubled-heap (make-heap (* 2 (:size heap)))]
       (heap-double heap doubled-heap loc)) 
     (if (== loc (:size heap)) doubled-heap (heap-double heap (heap-set doubled-heap loc (heap-get heap loc)) (inc loc)))))
-
 (defn add-helper [heap loc] 
  (if (== (compare (heap-get heap loc) (heap-get-parent heap loc)) -1) 
    (let [temp (heap-get heap loc)]
@@ -159,4 +158,5 @@ If the data vector is too small, we resize it."
       (Heap. (inc (:size heap)) (:data (add-helper (heap-set heap (heap-last heap 0) data) (heap-last heap 0))))))
 
 (defn heap-equal [heap1 size data] 
-  (if (and (= (:size heap1) size) (= (:data heap1) data)) true false))
+  (and (= (:size heap1) size)
+       (= (take (:size heap1) (:data heap1)) (take size data))))
