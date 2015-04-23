@@ -38,21 +38,21 @@
   (fact "deletes an element and replaces the correct element"
     (top (delete heap)) => 2)
   (fact "deletes an element and the heap matches"
-    (heap-equal (delete heap) 4 [2 3 4 7 nil]) => true
-    (heap-equal (delete big-heap) 10 [1 3 2 4 9 2 6 13 5 11 nil]) => true
-    (heap-equal (delete (delete big-heap)) 9 [2 3 2 4 9 11 6 13 5]))
+    (heap-equals (delete heap) 4 [2 3 4 7 nil]) => true
+    (heap-equals (delete big-heap) 10 [1 3 2 4 9 2 6 13 5 11 nil]) => true
+    (heap-equals (delete (delete big-heap)) 9 [2 3 2 4 9 11 6 13 5]))
   (fact "does not duplicate the last element"
     (heap-get (delete heap) 4) => nil)
   (fact "percolates down correctly"
     (heap-get (delete heap) 3) => 7)
   (fact "it can delte from a heap with only one element"
-    (heap-equal (delete (add (make-heap 1) 1)) 0 [nil]) => true)
+    (heap-equals (delete (add (make-heap 1) 1)) 0 [nil]) => true)
   (fact "it can delete from a heap with only two elements"
-   (heap-equal (delete (add (add (make-heap 2) 4) 5) ) 1 [5 nil]) => true
-   (heap-equal (delete h2) 1 [4 nil]) => true)
+   (heap-equals (delete (add (add (make-heap 2) 4) 5) ) 1 [5 nil]) => true
+   (heap-equals (delete h2) 1 [4 nil]) => true)
   (fact "it can delete from a heap with only three elements"
-    (heap-equal (delete (add (add (add (make-heap 3) 4) 5) 2)) 2 [4 5 nil]) => true
-    (heap-equal (delete h3) 2 [5 7 nil]) => true )
+    (heap-equals (delete (add (add (add (make-heap 3) 4) 5) 2)) 2 [4 5 nil]) => true
+    (heap-equals (delete h3) 2 [5 7 nil]) => true )
   (fact "deletes an element and decrements size"
     (:size (delete heap)) => 4
     (:size (delete h1)) => 0
@@ -63,7 +63,7 @@
     (:size (delete (make-heap 5))) => 0
     (:size (delete empty-heap)) => 0)
   (fact "deletes with from a heap with only one element"
-    (heap-equal (delete h1) 0 [nil]) => true)
+    (heap-equals (delete h1) 0 [nil]) => true)
 )
 
 
@@ -84,6 +84,6 @@
   (fact "smallest element goes to the top"
     (heap-get (add heap 0) 0) => 0)
   (fact "percolating up works when adding elements to heap"
-    (heap-equal (add heap 6) 6 [1 3 2 7 4 6 nil nil nil nil]) => true
-    (heap-equal (add big-heap 1) 12 [0 1 1 4 3 2 6 13 5 11 9 2 nil nil nil nil nil nil nil nil nil nil]) => true)))
+    (heap-equals (add heap 6) 6 [1 3 2 7 4 6 nil nil nil nil]) => true
+    (heap-equals (add big-heap 1) 12 [0 1 1 4 3 2 6 13 5 11 9 2 nil nil nil nil nil nil nil nil nil nil]) => true)))
 
