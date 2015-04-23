@@ -39,7 +39,8 @@
     (top (delete heap)) => 2)
   (fact "deletes an element and the heap matches"
     (heap-equal (delete heap) 4 [2 3 4 7 nil]) => true
-    (heap-equal (delete big-heap) 10 [1 3 2 4 9 2 6 13 5 11 nil]) => true)
+    (heap-equal (delete big-heap) 10 [1 3 2 4 9 2 6 13 5 11 nil]) => true
+    (heap-equal (delete (delete big-heap)) 9 [2 3 2 4 9 11 6 13 5]))
   (fact "does not duplicate the last element"
     (heap-get (delete heap) 4) => nil)
   (fact "percolates down correctly"
