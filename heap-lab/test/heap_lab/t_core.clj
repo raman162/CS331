@@ -67,7 +67,6 @@
     (:size (delete h3)) => 2
     (:size (delete big-heap)) => 10)
   (fact "does not decrement size when there is an empty heap"
-    (:size (delete (make-heap 5))) => 0
     (:size (delete empty-heap)) => 0)
   (fact "deletes with from a heap with only one element"
     (heap-equals (delete h1) 0 [nil]) => true)
