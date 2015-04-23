@@ -157,6 +157,6 @@ If the data vector is too small, we resize it."
   (if (heap-full heap) (add (Heap. (:size heap) (:data (heap-double heap nil 0)))   data)
       (Heap. (inc (:size heap)) (:data (add-helper (heap-set heap (heap-last heap 0) data) (heap-last heap 0))))))
 
-(defn heap-equals [heap1 size data] 
+(defn heap-equal [heap1 size data] 
   (and (= (:size heap1) size)
        (= (take (:size heap1) (:data heap1)) (take size data))))

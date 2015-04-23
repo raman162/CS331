@@ -11,7 +11,15 @@
 
 
 
+
 (let [heap (add (add (add (add (add (make-heap 5) 4) 1) 2) 7) 3) empty-heap (make-heap 10) h1 (add (make-heap 1) 3) h2 (add (add (make-heap 2) 3) 4)  h3 (add (add (add (make-heap 3) 4) 5) 7) big-heap (add (add (add (add (add (add (add (add (add (add (add (make-heap 11) 1)3)2)4)9)2)6)13)5)11) 0) ]
+
+(defn heap-equals [heap1 size data] 
+  (and (= (:size heap1) size)
+       (= (take (:size heap1) (:data heap1)) (take size data))))
+
+
+
 (facts "about make-heap"
   (fact "the size is empty when creating new heap"
     (:size (make-heap 10)) => 0)
