@@ -1,5 +1,5 @@
 Lab report for Heap Lab - rwalwynv
-Timestamp: 2015-04-23 08:07:57
+Timestamp: 2015-04-23 08:54:04
 
 |  :scenario |                                :title |                   :result | :score |
 |------------+---------------------------------------+---------------------------+--------|
@@ -22,5 +22,5 @@ All checks (48) succeeded.
 FAIL "about delete - does not duplicate the last element" at (t_core.clj:52)
     Expected: nil
       Actual: 4
-FAILURE: 1 check failed.  (But 40 succeeded.)
+FAILURE: 1 check failed.  (But 39 succeeded.)
 Subprocess failed
