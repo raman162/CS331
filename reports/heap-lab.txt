@@ -1,5 +1,5 @@
 Lab report for Heap Lab - rwalwynv
-Timestamp: 2015-04-22 20:19:35
+Timestamp: 2015-04-22 21:07:53
 
 |  :scenario |                                   :title | :result | :score |
 |------------+------------------------------------------+---------+--------|
@@ -43,7 +43,7 @@ Exception in thread "main" java.lang.IllegalStateException: heap-equal already r
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init5412469826512953350.clj:1)
+	at user$eval8042.invoke(form-init4088599845607966201.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -211,7 +211,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init1657200560545531921.clj:1)
+	at user$eval8042.invoke(form-init784064379586183124.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -380,7 +380,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init1004864235265912785.clj:1)
+	at user$eval8042.invoke(form-init5360207838681724881.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -549,7 +549,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init8855871499015238091.clj:1)
+	at user$eval8042.invoke(form-init7064344880048148760.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -718,7 +718,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init35286906922461252.clj:1)
+	at user$eval8042.invoke(form-init2284175692748899451.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -887,7 +887,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init6329014270872940981.clj:1)
+	at user$eval8042.invoke(form-init7444407946941248040.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -1056,7 +1056,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init4316473444898305086.clj:1)
+	at user$eval8042.invoke(form-init1361251314514528998.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
