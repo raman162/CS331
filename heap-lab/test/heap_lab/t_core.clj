@@ -19,7 +19,6 @@
        (= (take (:size heap1) (:data heap1)) (take size data))))
 
 
-
 (facts "about make-heap"
   (fact "the size is empty when creating new heap"
     (:size (make-heap 10)) => 0)
