@@ -1,5 +1,5 @@
 Lab report for Heap Lab - rwalwynv
-Timestamp: 2015-04-22 18:57:18
+Timestamp: 2015-04-22 20:19:35
 
 |  :scenario |                                   :title | :result | :score |
 |------------+------------------------------------------+---------+--------|
@@ -43,7 +43,7 @@ Exception in thread "main" java.lang.IllegalStateException: heap-equal already r
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init251713817684763549.clj:1)
+	at user$eval8042.invoke(form-init5412469826512953350.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -69,7 +69,7 @@ Subprocess failed
 
 ** Details for Test student tests vs instructor code
 
-Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:35:5)
+Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:41:5)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
 	at clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3573)
@@ -211,7 +211,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init8241617215349828110.clj:1)
+	at user$eval8042.invoke(form-init1657200560545531921.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -238,7 +238,7 @@ Subprocess failed
 
 ** Details for Heap add doesn't increment size.
 
-Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:35:5)
+Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:41:5)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
 	at clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3573)
@@ -380,7 +380,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init3626148023920693302.clj:1)
+	at user$eval8042.invoke(form-init1004864235265912785.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -407,7 +407,7 @@ Subprocess failed
 
 ** Details for Move up only moves up once.
 
-Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:35:5)
+Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:41:5)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
 	at clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3573)
@@ -549,7 +549,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init8497952253096369010.clj:1)
+	at user$eval8042.invoke(form-init8855871499015238091.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -576,7 +576,7 @@ Subprocess failed
 
 ** Details for Percolate down only goes left.
 
-Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:35:5)
+Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:41:5)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
 	at clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3573)
@@ -718,7 +718,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init8125620184400946426.clj:1)
+	at user$eval8042.invoke(form-init35286906922461252.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -745,7 +745,7 @@ Subprocess failed
 
 ** Details for Percolate down right swaps never happen.
 
-Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:35:5)
+Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:41:5)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
 	at clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3573)
@@ -887,7 +887,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init6890299771483148797.clj:1)
+	at user$eval8042.invoke(form-init6329014270872940981.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
@@ -914,7 +914,7 @@ Subprocess failed
 
 ** Details for Delete doesn't decrement size.
 
-Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:35:5)
+Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol: heap-equal in this context, compiling:(heap_lab/t_core.clj:41:5)
 	at clojure.lang.Compiler.analyze(Compiler.java:6380)
 	at clojure.lang.Compiler.analyze(Compiler.java:6322)
 	at clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3573)
@@ -1056,7 +1056,7 @@ Exception in thread "main" java.lang.RuntimeException: Unable to resolve symbol:
 	at midje.repl$load_facts$fn__7979.invoke(repl.clj:206)
 	at midje.repl$load_facts.doInvoke(repl.clj:192)
 	at clojure.lang.RestFn.invoke(RestFn.java:397)
-	at user$eval8042.invoke(form-init479943177066485198.clj:1)
+	at user$eval8042.invoke(form-init4316473444898305086.clj:1)
 	at clojure.lang.Compiler.eval(Compiler.java:6619)
 	at clojure.lang.Compiler.eval(Compiler.java:6609)
 	at clojure.lang.Compiler.load(Compiler.java:7064)
