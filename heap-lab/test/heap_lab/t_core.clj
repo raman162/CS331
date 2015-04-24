@@ -48,8 +48,6 @@
     (heap-equals (delete heap) 4 [2 3 4 7 nil]) => true
     (heap-equals (delete big-heap) 10 [1 3 2 4 9 2 6 13 5 11 nil]) => true
     (heap-equals (delete (delete big-heap)) 9 [2 3 2 4 9 11 6 13 5]))
-  (fact "does not duplicate the last element"
-    (heap-get (delete heap) 4) => nil)
   (fact "percolates down correctly"
     (heap-get (delete heap) 3) => 7)
   (fact "it can delte from a heap with only one element"
@@ -92,5 +90,6 @@
   (fact "percolating up works when adding elements to heap"
     (heap-equals (add heap 6) 6 [1 3 2 7 4 6 nil nil nil nil]) => true
     (heap-equals (add big-heap 1) 12 [0 1 1 4 3 2 6 13 5 11 9 2 nil nil nil nil nil nil nil nil nil nil]) => true
+    (heap-equals (add (delete heap) 0) 5 [0 2 4 7 3]) => true
    )))
 
