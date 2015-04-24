@@ -1,5 +1,5 @@
 Lab report for Heap Lab - rwalwynv
-Timestamp: 2015-04-23 08:54:04
+Timestamp: 2015-04-24 04:53:12
 
 |  :scenario |                                :title |                   :result | :score |
 |------------+---------------------------------------+---------------------------+--------|
