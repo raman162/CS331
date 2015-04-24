@@ -91,5 +91,6 @@
     (heap-get (add heap 0) 0) => 0)
   (fact "percolating up works when adding elements to heap"
     (heap-equals (add heap 6) 6 [1 3 2 7 4 6 nil nil nil nil]) => true
-    (heap-equals (add big-heap 1) 12 [0 1 1 4 3 2 6 13 5 11 9 2 nil nil nil nil nil nil nil nil nil nil]) => true)))
+    (heap-equals (add big-heap 1) 12 [0 1 1 4 3 2 6 13 5 11 9 2 nil nil nil nil nil nil nil nil nil nil]) => true
+   )))
 
