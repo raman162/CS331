@@ -1,0 +1,27 @@
+Grade Report for Raman S. Walwyn-Venugopal
+Produced 2015-04-28 12:37
+Netid: rwalwynv cwid: A20296946
+Course: cs331 (2015-01)  Section: 02
+
+                   Assignment  Status Raw Max    Norm Weight  Points 
+----------------------------- ------- --- --- ------- ------ ------- 
+                   First Exam  Graded  76  80  95.00% 0.3750 35.6250 
+             Second Exam (v2)  Graded  92  92 100.00% 0.3750 37.5000 
+                   Final Exam Pending n/a 100     n/a 0.0000  0.0000 
+                  Initial Lab  Graded  55 100  55.00% 0.0375  2.0625 
+              Linked List Lab  Graded 100 100 100.00% 0.0375  3.7500 
+                    Deque Lab Dropped   0 100   0.00% 0.0000  0.0000 
+                      BST Lab  Graded  45 100  45.00% 0.0375  1.6875 
+                     Heap Lab  Graded 100 100 100.00% 0.0375  3.7500 
+        Pre Course Assessment  Graded   1   1 100.00% 0.0143  1.4286 
+Clojure Introduction Activity  Graded   1   1 100.00% 0.0143  1.4286 
+                      Records  Graded   1   1 100.00% 0.0143  1.4286 
+                    Recursion  Graded   1   1 100.00% 0.0143  1.4286 
+              Immutable Lists Pending n/a   1     n/a 0.0000  0.0000 
+                      Vectors Pending n/a   1     n/a 0.0000  0.0000 
+          Binary Search Trees  Graded   1   1 100.00% 0.0143  1.4286 
+                   Traversals  Graded   1   1 100.00% 0.0143  1.4286 
+                        Heaps  Graded   1   1 100.00% 0.0143  1.4286 
+                     Up Trees Pending n/a   1     n/a 0.0000  0.0000 
+----------------------------- ------- --- --- ------- ------ ------- 
+                        Total                  94.37% 1.0000 94.3750 
